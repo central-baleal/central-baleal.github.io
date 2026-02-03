@@ -1,27 +1,29 @@
 {{ define "main" }}
-    <header>
-        <div class="container">
-            <h1>🍴 Central <span>Food & Drinks</span></h1>
-            <div class="lang-switcher">
-                {{ range .Site.Languages }}
-                    {{ if eq $.Site.Language.Lang .Lang }}
-                        <button class="lang-btn active">{{ .Params.flag }} {{ .LanguageName }}</button>
-                    {{ else }}
-                        <a href="{{ .Lang | relURL }}" class="lang-btn">{{ .Params.flag }} {{ .LanguageName }}</a>
+    <div class="sticky-header-wrapper">
+        <header>
+            <div class="container">
+                <h1>🍴 Central <span>Food & Drinks</span></h1>
+                <div class="lang-switcher">
+                    {{ range .Site.Languages }}
+                        {{ if eq $.Site.Language.Lang .Lang }}
+                            <button class="lang-btn active">{{ .Params.flag }} {{ .LanguageName }}</button>
+                        {{ else }}
+                            <a href="{{ .Lang | relURL }}" class="lang-btn">{{ .Params.flag }} {{ .LanguageName }}</a>
+                        {{ end }}
                     {{ end }}
-                {{ end }}
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <nav class="menu-nav">
-        <div class="container">
-            <a href="#cafetaria" class="nav-item">☕ <span>{{ i18n "nav_cafetaria" }}</span></a>
-            <a href="#drinks" class="nav-item">🍷 <span>{{ i18n "nav_drinks" }}</span></a>
-            <a href="#food" class="nav-item">🍔 <span>{{ i18n "nav_food" }}</span></a>
-            <a href="#snacks" class="nav-item">🍤 <span>{{ i18n "nav_snacks" }}</span></a>
-        </div>
-    </nav>
+        <nav class="menu-nav">
+            <div class="container">
+                <a href="#cafetaria" class="nav-item">☕ <span>{{ i18n "nav_cafetaria" }}</span></a>
+                <a href="#drinks" class="nav-item">🍷 <span>{{ i18n "nav_drinks" }}</span></a>
+                <a href="#food" class="nav-item">🍔 <span>{{ i18n "nav_food" }}</span></a>
+                <a href="#snacks" class="nav-item">🍤 <span>{{ i18n "nav_snacks" }}</span></a>
+            </div>
+        </nav>
+    </div>
 
     <main class="container">
         <!-- Cafetaria Section -->
@@ -376,9 +378,8 @@
                 const targetId = link.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
                 if (targetSection) {
-                    const headerHeight = document.querySelector('header').offsetHeight;
-                    const navHeight = document.querySelector('.menu-nav').offsetHeight;
-                    const totalOffset = headerHeight + navHeight + 20;
+                    const stickyWrapper = document.querySelector('.sticky-header-wrapper');
+                    const totalOffset = stickyWrapper ? stickyWrapper.offsetHeight + 20 : 168;
                     
                     const targetPosition = targetSection.offsetTop - totalOffset;
                     window.scrollTo({
