@@ -5,14 +5,14 @@ defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.pt]
-    languageName = 'Português'
+    languageName = 'PT'
     weight = 1
     title = 'Central Food & Drinks - Menu'
     [languages.pt.params]
       flag = '🇵🇹'
     
   [languages.en]
-    languageName = 'English'
+    languageName = 'EN'
     weight = 2
     title = 'Central Food & Drinks - Menu'
     [languages.en.params]
