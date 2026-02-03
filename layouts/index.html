@@ -5,11 +5,9 @@
                 <h1>🍴 Central <span>Food & Drinks</span></h1>
                 <div class="lang-switcher">
                     {{ range .Site.Languages }}
-                        {{ if eq $.Site.Language.Lang .Lang }}
-                            <button class="lang-btn active">{{ .Params.flag }} {{ .LanguageName }}</button>
-                        {{ else }}
-                            <a href="{{ .Lang | relURL }}" class="lang-btn">{{ .Params.flag }} {{ .LanguageName }}</a>
-                        {{ end }}
+                        <a href="{{ .Lang | relURL }}" class="lang-btn{{ if eq $.Site.Language.Lang .Lang }} active{{ end }}">
+                            {{ .Params.flag }} {{ .LanguageName }}
+                        </a>
                     {{ end }}
                 </div>
             </div>

@@ -84,11 +84,6 @@ a.lang-btn {
     text-decoration: none;
 }
 
-button.lang-btn {
-    font-family: inherit;
-    font-size: inherit;
-}
-
 .lang-btn:hover {
     background: white;
     color: var(--primary-green);
