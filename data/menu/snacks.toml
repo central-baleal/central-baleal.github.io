@@ -1,7 +1,7 @@
 # Petiscos / Snacks
 [[snacks]]
 id = "fried_shrimp"
-price = "11,00 €"
+price = "15,00 €"
 
 [snacks.name]
 pt = "Camarão Frito"
@@ -9,7 +9,7 @@ en = "Fried Shrimp"
 
 [[snacks]]
 id = "octopus_salad"
-price = "13,00 €"
+price = "14,00 €"
 
 [snacks.name]
 pt = "Salada de Polvo"
@@ -17,7 +17,7 @@ en = "Octopus Salad"
 
 [[snacks]]
 id = "clams"
-price = "13,00 €"
+price = "16,00 €"
 
 [snacks.name]
 pt = "Amêijoas"
