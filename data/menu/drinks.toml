@@ -136,7 +136,7 @@ name = "Compal"
 
 [[soft_drinks]]
 id = "can_juice"
-price = "2,00 €"
+price = "2,20 €"
 
 [soft_drinks.name]
 pt = "Sumo de Lata"
@@ -152,7 +152,7 @@ en = "Natural Orange Juice"
 
 [[soft_drinks]]
 id = "water_small"
-price = "1,00 €"
+price = "1,20 €"
 
 [soft_drinks.name]
 pt = "Água 0.5L"
@@ -160,7 +160,7 @@ en = "Water 0.5L"
 
 [[soft_drinks]]
 id = "water_large"
-price = "2,00 €"
+price = "2,20 €"
 
 [soft_drinks.name]
 pt = "Água 1.5L"
