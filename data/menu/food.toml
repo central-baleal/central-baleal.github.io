@@ -77,8 +77,8 @@ pt = "Salada de Atum"
 en = "Tuna Salad"
 
 [salads.description]
-pt = "Alface, Tomate, Cebola Roxa, Atum Natural, Pimento, Pepino, Ovo e Molho Especial"
-en = "Lettuce, Tomato, Red Onion, Natural Tuna, Capsicum, Cucumber, Egg, Special Sauce"
+pt = "Alface, Tomate, Cebola, Milho, Pão Torrado, Pepino, Ovo e Molho Especial"
+en = "Lettuce, Tomato, Onion, Corn, Croutons, Cucumber, Egg, Special Sauce"
 
 [[salads]]
 id = "chicken_salad"
@@ -89,8 +89,8 @@ pt = "Salada de Frango"
 en = "Chicken Salad"
 
 [salads.description]
-pt = "Alface, Tomate, Cebola Roxa, Frango Desfiado, Pimento, Pepino, Ovo e Molho Especial"
-en = "Lettuce, Tomato, Red Onion, Shredded Chicken, Capsicum, Cucumber, Egg, Special Sauce"
+pt = "Alface, Tomate, Cebola, Milho, Pão Torrado, Pepino, Ovo e Molho Especial"
+en = "Lettuce, Tomato, Onion, Corn, Croutons, Cucumber, Egg, Special Sauce"
 
 [[salads]]
 id = "shrimp_salad"
@@ -101,8 +101,8 @@ pt = "Salada de Camarão"
 en = "Shrimp Salad"
 
 [salads.description]
-pt = "Alface, Tomate, Cebola Roxa, Maçã, Ananás, Pimento, Ovo e Molho Especial"
-en = "Lettuce, Tomato, Red Onion, Apple, Pineapple, Capsicum, Egg, Special Sauce"
+pt = "Alface, Tomate, Cebola, Milho, Pão Torrado, Pepino, Ovo e Molho Especial"
+en = "Lettuce, Tomato, Onion, Corn, Croutons, Cucumber, Egg, Special Sauce"
 
 # Hamburgers
 [[hamburgers]]
